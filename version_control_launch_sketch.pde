@@ -7,7 +7,7 @@ void setup(){
 
 void draw(){
   background(0);
-  for (int j = particles.size()-1; i > 0; j--){
+  for (int j = particles.size()-1; j > 0; j--){
     particles.get(abs(j)).update();
     particles.get(abs(j)).display();
     if (particles.get(abs(j)).position.y >= 400){
